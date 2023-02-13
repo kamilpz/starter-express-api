@@ -1,11 +1,11 @@
 const express = require('express')
-const path = require('path')
+//const path = require('path')
 const app = express()
 
 var text2png = require('text2png');
 
-app.set("views", path.join(__dirname))
-app.set("view engine", "ejs")
+//app.set("views", path.join(__dirname))
+//app.set("view engine", "ejs")
 
 app.get('/', function (req, res) {
     var text = req.query.text
